@@ -4,20 +4,26 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SeleniumTest {
+public class Task1_Yahoo_Verification {
 
     public static void main(String[] args) {
 
-        // we create our browser driver
         WebDriverManager.chromedriver().setup();
 
-        //we create instance of the chrome driver
+
         WebDriver driver=new ChromeDriver();
 
-       // driver.get("https://www.google.com");
-        driver.get("https://www.facebook.com");
+
+        driver.get("https://www.yahoo.com");
+
+       String currentTitle=driver.getTitle();
+        System.out.println("currentTitle = " + currentTitle);
+
 
     }
+
+
+
 
 
 }
