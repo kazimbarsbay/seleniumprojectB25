@@ -38,18 +38,7 @@ public class T5_kendim {
         //String actualPlaceHolder=firstNameInput.getAttribute da diyebiliriz.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+        driver.close();
 
 
 
